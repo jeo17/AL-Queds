@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --color1: whitesmoke;
+    --color2: gainsboro;
+    --color3: darkgray;
+  }
+
+.countainer{
+     display: flex;
+     height: 400px;
+}
+#canvas,.ps,#map #map2{
+    height: 100%;
+}
+
+.ps{
+    width: 40%;
+    background-image: url("../imgs/Quds1.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#map {
+    flex-grow: 1;
+    background: radial-gradient(circle, var(--color1) 0%, var(--color2) 50%, var(--color3) 100%), url('../imgs/p1.png');
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+
+#map2{
+    flex-grow: 1;
+    background: radial-gradient(circle, var(--color1) 0%, var(--color2) 50%, var(--color3) 100%), url('../imgs/p2.png');
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+
+#canvas {
+    width: 40%;
+    position: relative;
+    background: radial-gradient(circle, var(--color1) 0%, var(--color2) 50%, var(--color3) 100%);
+}
+.ball {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, wheat, red);    position: absolute;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    border-radius: 50%;
+    color: aliceblue;
+    font-weight: 800;
+}
